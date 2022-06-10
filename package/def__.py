@@ -52,8 +52,9 @@ def decrypt_data(data, key):
         # decrypt password
         return cipher.decrypt(data)[:-16].decode()
     except:
-            # not supported
-            return ""
+	
+	# not supported
+	return ""
 
 
 def cookies():
