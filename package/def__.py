@@ -94,8 +94,9 @@ def cookies():
         print(f"""
         Host: {host_key}
         Cookie name: {name}
-        Creation datetime (UTC): {get_chrome_datetime(creation_utc)}
         encrypted_value = {encrypted_value}
+	decrypted_value:{decrypted_value}
+        Creation datetime (UTC): {get_chrome_datetime(creation_utc)}
         Last access datetime (UTC): {get_chrome_datetime(last_access_utc)}
         Expires datetime (UTC): {get_chrome_datetime(expires_utc)}
         ===============================================================""")
